@@ -5,8 +5,8 @@
 </head>
 
 <body>
-    <div x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan')).json()">
-       <h1 x-text="data.message"></h1>
+    <div x-data="{data:[]}" x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan')).json()">
+       <h1 x-text="data[0].message"></h1>
     </div>
 </body>
 

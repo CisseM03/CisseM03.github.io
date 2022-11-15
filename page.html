@@ -1,14 +1,14 @@
 <html>
 
 <head>
-    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js%22%3E"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
 </head>
 
 <body>
     <div x-data="{
         responsedata: null,
         async getData() {
-            this.responsedata = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan%27)).json();
+            this.responsedata = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan)).json();
         }
     }">
         Data returned: <strong x-text="responsedata.message">Placeholder</strong>

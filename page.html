@@ -2,16 +2,12 @@
 
 <head>
     <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div x-data="{
-        responsedata: null,
-        async getData() {
-            this.responsedata = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan)).json();
-        }
-    }">
-        Data returned: <strong x-text="responsedata.message">Placeholder</strong>
+    <div x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan')).json()">
+       <h1 x-text="data.message"></h1>
     </div>
 </body>
 

@@ -1,5 +1,7 @@
-h1, div, a{
+h1,h3, div, a{
     text-align: center;
-    background-color: aqua;
+}
 
+body{
+    background-color: gray;
 }

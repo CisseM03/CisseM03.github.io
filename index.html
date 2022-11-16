@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    
+    <h1>Enter your name</h1>
     <div class="main">
         <div x-data="{
         responsedata: null,
@@ -29,9 +29,9 @@
     }">
             <input type="text" x-model="firstname">
             <input type="text" x-model="lastname">
-            <button x-on:click="callmethod1">Call method</button>
+            <button x-on:click="callmethod1">Thats me!</button>
 
-            <p>Data inserted with id: <strong x-text="responsedata"></strong></p>
+            <h3>Your name is: <strong x-text="responsedata"></strong></h3>
         
 
         </div>

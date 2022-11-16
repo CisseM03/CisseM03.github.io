@@ -8,7 +8,7 @@
     <p>hallo smeerlapen!</p>
     <div x-data="{data:[]}" x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan')).json()">
        <h1 x-text="data['message']"></h1>
-        <h1 x-text="data['names']"></h1>
+        <h1 x-text="data['name']"></h1>
     </div>
 </body>
 

@@ -5,10 +5,13 @@
 </head>
 
 <body>
-    <p>hallo smeerlapen!</p>
     <div x-data="{data:[]}" x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/japan')).json()">
-       <h1 x-text="data['message']"></h1>
-        <h1 x-text="data['name']"></h1>
+       <p x-text="data['message']"></p>
+        <p x-text="data['name']"></p>
+        
+    <div x-data="{data:[]}" x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/america')).json()">
+       <p x-text="data['message']"></p>
+        <p x-text="data['name']"></p>
     </div>
 </body>
 

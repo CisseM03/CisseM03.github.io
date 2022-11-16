@@ -9,6 +9,8 @@
        <h3 x-text="data['message']"></h3>
         <h3 x-text="data['name']"></h3>
         
+    <br>
+        
     <div x-data="{data:[]}" x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/america')).json()">
        <h3 x-text="data['message']"></h3>
         <h3 x-text="data['name']"></h3>

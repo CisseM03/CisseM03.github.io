@@ -14,7 +14,7 @@
 
     <div x-data="{data:[]}" x-init="data = await (await fetch('https://faker-project-cissem03.cloud.okteto.net/america')).json()">
         <p x-text="data['message']"></strong></p>
-        <p x-text="data['name']"></strong></p>
+        <h3 x-text="data['name']"></h3>
 
         <a class="nav-link active" aria-current="page" href="index.html">Return Home</a>
 </body>
